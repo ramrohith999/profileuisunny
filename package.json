@@ -1,0 +1,26 @@
+{
+  "name": "profileuisunny",
+  "version": "1.0.0",
+  "description": "sunny",
+  "keywords": [
+    "sun"
+  ],
+  "homepage": "https://github.com/ramrohith999/profileuisunny#readme",
+  "bugs": {
+    "url": "https://github.com/ramrohith999/profileuisunny/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramrohith999/profileuisunny.git"
+  },
+  "license": "ISC",
+  "author": "Ram Rohith",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
