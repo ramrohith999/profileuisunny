@@ -21,6 +21,13 @@
     "start": "parcel index.html"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.27.1",
+    "@parcel/transformer-js": "^2.15.2",
     "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
