@@ -160,11 +160,11 @@
       });
     }
   }
-})({"53YZR":[function(require,module,exports,__globalThis) {
+})({"7wZbQ":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 60422;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -16125,15 +16125,19 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _browser = require("@emailjs/browser");
 var _browserDefault = parcelHelpers.interopDefault(_browser);
+var _javaPdf = require("url:../../public//assets/resumes/java.pdf");
+var _javaPdfDefault = parcelHelpers.interopDefault(_javaPdf);
+var _pythonPdf = require("url:../../public/assets/resumes/python.pdf");
+var _pythonPdfDefault = parcelHelpers.interopDefault(_pythonPdf);
 var _s = $RefreshSig$();
 const resumes = {
     Java: {
         description: "I am a Java developer and i have my resume attached  highlighting experience with Spring Boot and REST APIs.",
-        file: new URL(require("a097447e45dbcb62")).href
+        file: (0, _javaPdfDefault.default)
     },
     Python: {
         description: "I am a Python developer and i have my resume focusing on Django, Flask, and data analysis.",
-        file: new URL(require("23632324174be81d")).href
+        file: (0, _pythonPdfDefault.default)
     }
 };
 //component
@@ -16162,7 +16166,7 @@ const Resume = ()=>{
             resume_description: description,
             resume_link: resumes[selected].file
         };
-        (0, _browserDefault.default).send('service_5hp1wqd', 'template_cmivo9v', templateParams, 'S4ndBfOqSW4IiTX3Y').then((response)=>{
+        (0, _browserDefault.default).send('service_5hp1wqd', 'template_a6awwkn', templateParams, 'S4ndBfOqSW4IiTX3Y').then((response)=>{
             console.log("SUCCESS!", response.status, response.text);
             alert("Email sent successfully!");
         }).catch((error)=>{
@@ -16178,7 +16182,7 @@ const Resume = ()=>{
                 children: "Select resume"
             }, void 0, false, {
                 fileName: "src/components/Resume.js",
-                lineNumber: 65,
+                lineNumber: 70,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
@@ -16195,7 +16199,7 @@ const Resume = ()=>{
                         children: "-- Select --"
                     }, void 0, false, {
                         fileName: "src/components/Resume.js",
-                        lineNumber: 72,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -16203,7 +16207,7 @@ const Resume = ()=>{
                         children: "Java"
                     }, void 0, false, {
                         fileName: "src/components/Resume.js",
-                        lineNumber: 73,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -16211,13 +16215,13 @@ const Resume = ()=>{
                         children: "Python"
                     }, void 0, false, {
                         fileName: "src/components/Resume.js",
-                        lineNumber: 74,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Resume.js",
-                lineNumber: 67,
+                lineNumber: 72,
                 columnNumber: 9
             }, undefined),
             selected && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16230,12 +16234,12 @@ const Resume = ()=>{
                     placeholder: "Resume description"
                 }, void 0, false, {
                     fileName: "src/components/Resume.js",
-                    lineNumber: 79,
+                    lineNumber: 84,
                     columnNumber: 5
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Resume.js",
-                lineNumber: 78,
+                lineNumber: 83,
                 columnNumber: 3
             }, undefined),
             selected && resumes[selected] && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -16251,12 +16255,12 @@ const Resume = ()=>{
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Resume.js",
-                    lineNumber: 95,
+                    lineNumber: 100,
                     columnNumber: 1
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Resume.js",
-                lineNumber: 94,
+                lineNumber: 99,
                 columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -16268,7 +16272,7 @@ const Resume = ()=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/Resume.js",
-                lineNumber: 101,
+                lineNumber: 106,
                 columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -16277,13 +16281,13 @@ const Resume = ()=>{
                 children: "Submit"
             }, void 0, false, {
                 fileName: "src/components/Resume.js",
-                lineNumber: 111,
+                lineNumber: 116,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Resume.js",
-        lineNumber: 64,
+        lineNumber: 69,
         columnNumber: 5
     }, undefined);
 };
@@ -16298,7 +16302,7 @@ $RefreshReg$(_c, "Resume");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@emailjs/browser":"a603P","a097447e45dbcb62":"gN6qL","23632324174be81d":"cmoxM","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"a603P":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@emailjs/browser":"a603P","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","url:../../public//assets/resumes/java.pdf":"3aJnF","url:../../public/assets/resumes/python.pdf":"gllLP"}],"a603P":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "init", ()=>(0, _init.init));
@@ -16639,13 +16643,7 @@ const validateForm = (form)=>{
     if (!form || form.nodeName !== 'FORM') throw 'The 3rd parameter is expected to be the HTML form element or the style selector of the form';
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gN6qL":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("java.65178500.pdf") + "?" + Date.now();
-
-},{}],"cmoxM":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("python.a134735d.pdf") + "?" + Date.now();
-
-},{}],"7h6Pi":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7h6Pi":[function(require,module,exports,__globalThis) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -18923,6 +18921,12 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["53YZR","2R06K"], "2R06K", "parcelRequiredc8e", {}, "./", "/", "http://localhost:60422")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3aJnF":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("java.33ee5bb6.pdf") + "?" + Date.now();
+
+},{}],"gllLP":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("python.38d3d98a.pdf") + "?" + Date.now();
+
+},{}]},["7wZbQ","2R06K"], "2R06K", "parcelRequiredc8e", {}, "./", "/", "http://localhost:1234")
 
 //# sourceMappingURL=profileuisunny.0f77c784.js.map

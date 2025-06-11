@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import java from "url:../../public//assets/resumes/java.pdf";
+import python from "url:../../public/assets/resumes/python.pdf"
+
 
 
 const resumes = {
   Java: {
     description: "I am a Java developer and i have my resume attached  highlighting experience with Spring Boot and REST APIs.",
-    file: new URL("../../resumes/java.pdf", import.meta.url).href,
+    file: java
+    // file: new URL("../../public/resumes/java.pdf", import.meta.url).href,
   },
   Python: {
     description: "I am a Python developer and i have my resume focusing on Django, Flask, and data analysis.",
-    file: new URL("../../resumes/python.pdf", import.meta.url).href,
+    file: python
+    // file: new URL("../../public/resumes/python.pdf", import.meta.url).href,
   },
 };
 
@@ -45,7 +50,7 @@ const submitFunction = (e) => {
 
   emailjs.send(
     'service_5hp1wqd',
-    'template_cmivo9v',
+    'template_a6awwkn',
     templateParams,
     'S4ndBfOqSW4IiTX3Y'
   )
